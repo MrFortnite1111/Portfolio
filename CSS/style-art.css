@@ -1,0 +1,492 @@
+body {
+    font-family: 'Barlow', sans-serif;
+    margin: 0%;
+}
+
+/* header styles */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    padding: 150px;
+    margin: 0%;
+}
+
+.banner {
+    height: 400px;
+    width: auto;
+    background-image: url(../Images/Banner-Images/Banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #14111D;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.header a.logo {
+    float: left;
+    padding: 10px;
+}
+
+/* nav styles */
+nav {
+    width: 100%;
+    height: auto;
+    padding: 0px 10px;
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    float: right;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    margin: .25em;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #E9B820;
+    transition: .3s;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 0%;
+    margin: 0%;
+}
+
+nav ul li {
+    font-size: .9em;
+    text-transform: uppercase
+}
+
+/* Menu Icon */
+
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked+.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    right: 0 !important;
+}
+
+.menu__btn {
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition-duration: .25s;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #2B243D;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+    z-index: 1;
+}
+
+.menu__item {
+    display: none;
+    padding: 12px 24px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+
+
+/* image gallery */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    margin: 100px 300px;
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/* Image Alignment */
+.mySlides {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* main styles */
+.section-1 {
+    background-color: #161033;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2-header {
+    background-color: #241A47;
+    padding: 10px;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: row;
+    background-color: #241A47;
+    padding: 1em;
+}
+
+.section-2-description {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+h2,
+h3,
+p {
+    color: white;
+    text-align: center;
+    margin: 0%;
+    padding: .3em;
+}
+
+p {
+    margin-bottom: 0%;
+}
+
+img {
+    padding: 0%;
+    justify-content: center;
+}
+
+/* art links */
+
+.art-link {
+    background-color: #483A7C;
+    width: 500px;
+    height: 300px;
+    padding: 5em;
+    margin: 1%;
+}
+
+
+/* footer styles */
+
+footer {
+    background-color: #483A7C;
+    height: 60px;
+}
+
+.social-nav {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    margin: 0%;
+}
+
+.social-nav li {
+    padding: 5px 10px 0px 10px;
+}
+
+/* mobile styles */
+
+@media screen and (max-width: 480px) {
+
+    .banner {
+        width: auto;
+    }
+
+    .banner h1 {
+        padding: 10px;
+        font-size: 50px;
+    }
+
+    .section-2 {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li a {
+        display: none;
+    }
+
+    img {
+        width: 300px;
+    }
+
+    p {
+        padding: .5em;
+    }
+
+    .container {
+        margin: 10px 30px 50px 30px;
+    }
+
+    .header img {
+        width: 20%;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .section-2 {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 679px) {
+
+    h1 {
+        padding: 0%;
+    }
+
+}
+
+@media screen and (min-width: 680px) {
+
+    .section-2 {
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+
+    nav ul li a {
+        display: none;
+    }
+
+    .hamburger-menu,
+    .menu__toggle,
+    .menu__btn,
+    .menu__box,
+    .menu__item {
+        display: block;
+    }
+
+    .container {
+        margin: 10px 30px 50px 30px;
+    }
+}
+
+@media screen and (min-width: 771px) {
+
+    nav ul li a {
+        display: block;
+    }
+
+    .hamburger-menu,
+    .menu__toggle,
+    .menu__btn,
+    .menu__box,
+    .menu__item {
+        display: none;
+    }
+
+    .container {
+        margin: 50px 100px;
+    }
+
+    .section-2 {
+        padding: 60px 90px;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .container {
+        margin: 1% 10% 3% 10%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .section-2 {
+        padding: 3% 15%;
+    }
+
+    .container {
+        margin: 1% 20% 3% 20%;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+
+    .section-2 {
+        padding: 3% 25%;
+    }
+
+    .container {
+        margin: 1% 30% 3% 30%;
+    }
+
+}
