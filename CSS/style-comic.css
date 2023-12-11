@@ -32,16 +32,24 @@ h1 {
     z-index: 1;
 }
 
-.header a.logo {
+#logo {
     float: left;
-    padding: 10px;
+    padding: 0%;
+    margin: 0%;
+    height: 55px;
+    width: 30%;
+}
+
+#logo img {
+    width: 120px;
+    float: left;
+    padding: 5px 10px;
 }
 
 /* nav styles */
 nav {
     width: 100%;
     height: auto;
-    padding: 0px 10px;
     font-family: 'Montserrat', sans-serif;
     position: fixed;
     float: right;
@@ -158,114 +166,14 @@ nav ul li {
 }
 
 
-/* image gallery */
-
-* {
-    box-sizing: border-box;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-    position: relative;
-    margin: 100px 300px;
-    background-color: rgba(0, 0, 0, 0.7)
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-    cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Six columns side by side */
-.column {
-    float: left;
-    width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-    opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-    opacity: 1;
-}
-
-/* Image Alignment */
-.mySlides {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
 /* main styles */
-
 
 .section-2 {
     display: flex;
     flex-direction: row;
     background-color: #161033;
     padding: 10px 0%;
+    height: 100%;
 }
 
 .section-2.alt {
@@ -273,10 +181,6 @@ nav ul li {
     flex-direction: row;
     background-color: #241A47;
     padding: 10px 0%;
-}
-
-.section-2-image {
-    padding: 20px;
 }
 
 .section-2-description {
@@ -394,6 +298,23 @@ footer {
 
 /* mobile styles */
 
+@media screen and (max-width: 679px) {
+
+    h1 {
+        padding: 0%;
+    }
+
+    .section-2, .section-2.alt {
+        padding: 8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
 @media screen and (max-width: 480px) {
 
     .banner {
@@ -401,16 +322,11 @@ footer {
     }
 
     .banner h1 {
-        padding: 10px;
         font-size: 50px;
     }
 
-    .section-2 {
+    .section-2, .section-2.alt {
         padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     nav ul li a {
@@ -429,43 +345,13 @@ footer {
         margin: 10px 30px 50px 30px;
     }
 
-    .header img {
-        width: 20%;
-    }
-
 }
 
-@media screen and (max-width: 550px) {
-
-    .section-2 {
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .section-2.alt {
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-}
-
-@media screen and (max-width: 679px) {
-
-    h1 {
-        padding: 0%;
-    }
-
-}
 
 @media screen and (min-width: 680px) {
 
-    .section-2 {
+    .section-2, .section-2.alt {
+        padding: 10px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -488,9 +374,6 @@ footer {
         display: block;
     }
 
-    .container {
-        margin: 10px 30px 50px 30px;
-    }
 }
 
 @media screen and (min-width: 771px) {
@@ -507,36 +390,25 @@ footer {
         display: none;
     }
 
-    .container {
-        margin: 50px 100px;
+    .section-2, .section-2.alt {
+        padding: 60px 90px;
     }
 
 }
 
-@media screen and (min-width: 1000px) {
-
-    .container {
-        margin: 1% 10% 3% 10%;
-    }
-
-}
 
 @media screen and (min-width: 1200px) {
 
-    .container {
-        margin: 1% 20% 3% 20%;
+    .section-2, .section-2.alt {
+        padding: 3% 15%;
     }
 
 }
 
 @media screen and (min-width: 1600px) {
 
-    .section-2 {
+    .section-2, .section-2.alt {
         padding: 3% 25%;
-    }
-
-    .container {
-        margin: 1% 30% 3% 30%;
     }
 
 }

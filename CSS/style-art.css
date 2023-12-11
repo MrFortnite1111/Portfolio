@@ -10,12 +10,13 @@ h1 {
     font-size: 60px;
     padding: 150px;
     margin: 0%;
+    color: white;
 }
 
 .banner {
     height: 400px;
     width: auto;
-    background-image: url(../Images/Banner-Images/Banner.png);
+    background-image: url(../Images/Banner-Images/queens-gambit.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -32,16 +33,24 @@ h1 {
     z-index: 1;
 }
 
-.header a.logo {
+#logo {
     float: left;
-    padding: 10px;
+    padding: 0%;
+    margin: 0%;
+    height: 55px;
+    width: 30%;
+}
+
+#logo img {
+    width: 120px;
+    float: left;
+    padding: 5px 10px;
 }
 
 /* nav styles */
 nav {
     width: 100%;
     height: auto;
-    padding: 0px 10px;
     font-family: 'Montserrat', sans-serif;
     position: fixed;
     float: right;
@@ -292,7 +301,6 @@ h2 {
 }
 
 h2,
-h3,
 p {
     color: white;
     text-align: center;
@@ -313,10 +321,22 @@ img {
 
 .art-link {
     background-color: #483A7C;
-    width: 500px;
-    height: 300px;
-    padding: 5em;
+    padding: 6em;
     margin: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.art-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.art-link:hover, .art-link a:hover {
+    background-color: #6d5caa;
+    color: black;
+    transition: .5s;
 }
 
 
@@ -361,6 +381,10 @@ footer {
         justify-content: center;
         align-items: center;
     }
+    
+    .art-link {
+        padding: 25% 30%;
+    }
 
     nav ul li a {
         display: none;
@@ -378,13 +402,9 @@ footer {
         margin: 10px 30px 50px 30px;
     }
 
-    .header img {
-        width: 20%;
-    }
-
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 679px) {
 
     .section-2 {
         padding: 10px;
@@ -393,10 +413,6 @@ footer {
         justify-content: center;
         align-items: center;
     }
-
-}
-
-@media screen and (max-width: 679px) {
 
     h1 {
         padding: 0%;
@@ -412,6 +428,10 @@ footer {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+    }
+    
+    .art-link {
+        padding: 25% 7%;
     }
 
 }
@@ -455,6 +475,10 @@ footer {
 
     .section-2 {
         padding: 60px 90px;
+    }
+    
+    .art-link {
+        padding: 25% 10%;
     }
 
 }

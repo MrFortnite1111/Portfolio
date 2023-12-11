@@ -15,7 +15,7 @@ h1 {
 .banner {
     height: 400px;
     width: auto;
-    background-image: url(../Images/Banner-Images/Banner.png);
+    background-image: url(../Images/Banner-Images/Marviless-Journey.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -32,16 +32,24 @@ h1 {
     z-index: 1;
 }
 
-.header a.logo {
+#logo {
     float: left;
-    padding: 10px;
+    padding: 0%;
+    margin: 0%;
+    height: 55px;
+    width: 30%;
+}
+
+#logo img {
+    width: 120px;
+    float: left;
+    padding: 5px 10px;
 }
 
 /* nav styles */
 nav {
     width: 100%;
     height: auto;
-    padding: 0px 10px;
     font-family: 'Montserrat', sans-serif;
     position: fixed;
     float: right;
@@ -181,8 +189,8 @@ textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #E9B820;
+    color: black;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -191,14 +199,26 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #161033;
+    color: white;
+    border: 1px solid #E9B820;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s;
 }
 
 /* Add a background color and some padding around the form */
 .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #161033;
     padding: 20px;
+    margin: 10px;
+}
+
+/* Text Color */
+label {
+    color: #E9B820;
 }
 
 /* main styles */
@@ -233,6 +253,11 @@ p {
 
 p {
     margin-bottom: 0%;
+}
+
+p a {
+    color: #E9B820;
+    text-decoration: none;
 }
 
 img {
@@ -304,20 +329,8 @@ footer {
         display: none;
     }
 
-    img {
-        width: 300px;
-    }
-
     p {
         padding: .5em;
-    }
-
-    .container {
-        margin: 10px 30px 50px 30px;
-    }
-
-    .header img {
-        width: 20%;
     }
 
 }
@@ -339,13 +352,32 @@ footer {
     h1 {
         padding: 0%;
     }
+    
+    .section-2 {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .section-2-image {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 680px) {
 
     .section-2 {
-        padding: 10px;
+        padding: 3% 7%;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -368,9 +400,10 @@ footer {
         display: block;
     }
 
-    .container {
-        margin: 10px 30px 50px 30px;
+    img {
+        width: 100%;
     }
+
 }
 
 @media screen and (min-width: 771px) {
@@ -387,32 +420,21 @@ footer {
         display: none;
     }
 
-    .container {
-        margin: 50px 100px;
-    }
-
     .section-2 {
-        padding: 60px 90px;
+        padding: 3% 9%;
+    }
+
+    img {
+        width: 100%;
     }
 
 }
 
-@media screen and (min-width: 1000px) {
-
-    .container {
-        margin: 1% 10% 3% 10%;
-    }
-
-}
 
 @media screen and (min-width: 1200px) {
 
     .section-2 {
         padding: 3% 15%;
-    }
-
-    .container {
-        margin: 1% 20% 3% 20%;
     }
 
 }
@@ -421,10 +443,6 @@ footer {
 
     .section-2 {
         padding: 3% 25%;
-    }
-
-    .container {
-        margin: 1% 30% 3% 30%;
     }
 
 }

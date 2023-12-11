@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat&display=swap" rel="stylesheet">
     <style>
-        @import url(../CSS/style.css);
+        @import url(CSS/style.css);
     </style>
 </head>
 
@@ -18,9 +18,11 @@
     <div id="container">
         <header>
             <div class="header">
-                <a href="homepage.html" class="logo">
-                    <img src="../Images/Logo.png" width="12%" height="auto" />
-                </a>
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="Images/Logo.png" alt="logo" />
+                    </a>
+                </div>
                 <nav>
                     <ul>
                         <div class="hamburger-menu">
@@ -33,7 +35,7 @@
                                 <li><a class="menu__item active" href="#">Home</a></li>
                                 <li><a class="menu__item" href="blog-page.html">Blog</a></li>
                                 <li><a class="menu__item" href="art-home-page.html">Art</a></li>
-                                <li><a class="menu__item" href="comic-page.html">Comic</a></li>
+                                <li><a class="menu__item" href="comic-page.html">Comics</a></li>
                                 <li><a class="menu__item" href="about-me.html">About</a></li>
                                 <li><a class="menu__item" href="contact-page.html">Contact</a></li>
                                 <li><a class="menu__item" href="resume-page.html">Resume</a></li>
@@ -45,7 +47,7 @@
                         <li><a href="#" class="active">Home</a></li>
                         <li><a href="blog-page.html">Blog</a></li>
                         <li><a href="art-home-page.html">Art</a></li>
-                        <li><a href="comic-page.html">Comic</a></li>
+                        <li><a href="comic-page.html">Comics</a></li>
                         <li><a href="about-me.html">About</a></li>
                         <li><a href="contact-page.html">Contact</a></li>
                         <li><a href="resume-page.html">Resume</a></li>
@@ -67,32 +69,32 @@
                     <!-- Full-width images with number text -->
                     <div class="mySlides">
                         <div class="numbertext">1 / 6</div>
-                        <img src="../Images/Portfolio-Gallery/Fruit Quest.png" style="width:70%">
+                        <img src="Images/Portfolio-Gallery/Fruit Quest.png" style="width:70%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">2 / 6</div>
-                        <img src="../Images/Portfolio-Gallery/Divine Power.png" style="width:70%">
+                        <img src="Images/Portfolio-Gallery/Divine Power.png" style="width:70%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">3 / 6</div>
-                        <img src="../Images/Portfolio-Gallery/Tracy Jefferson Character Sheet.png" style="width:70%">
+                        <img src="Images/Portfolio-Gallery/Tracy Jefferson Character Sheet.png" style="width:70%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">4 / 6</div>
-                        <img src="../Images/Portfolio-Gallery/Serenity in Thousands.jpg" style="width:70%">
+                        <img src="Images/Portfolio-Gallery/Serenity in Thousands.jpg" style="width:70%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">5 / 6</div>
-                        <img src="../Images/Portfolio-Gallery/The Doctor's Ballad.jpeg" style="width:70%">
+                        <img src="Images/Portfolio-Gallery/The Doctor's Ballad.jpeg" style="width:70%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">6 / 6</div>
-                        <img src="../Images/Portfolio-Gallery/Gunman's Resolve.jpg" style="width:70%">
+                        <img src="Images/Portfolio-Gallery/Gunman's Resolve.jpg" style="width:70%">
                     </div>
 
                     <!-- Next and previous buttons -->
@@ -107,27 +109,27 @@
                     <!-- Thumbnail images -->
                     <div class="row">
                         <div class="column">
-                            <img class="demo cursor" src="../Images/Portfolio-Gallery/Fruit Quest.png" style="width:80%"
+                            <img class="demo cursor" src="Images/Portfolio-Gallery/Fruit Quest.png" style="width:80%"
                                 onclick="currentSlide(1)" alt="Fruit Quest">
                         </div>
                         <div class="column">
-                            <img class="demo cursor" src="../Images/Portfolio-Gallery/Divine Power.png" style="width:80%"
+                            <img class="demo cursor" src="Images/Portfolio-Gallery/Divine Power.png" style="width:80%"
                                 onclick="currentSlide(2)" alt="Divine Power">
                         </div>
                         <div class="column">
-                            <img class="demo cursor" src="../Images/Portfolio-Gallery/Tracy Jefferson Character Sheet.png"
+                            <img class="demo cursor" src="Images/Portfolio-Gallery/Tracy Jefferson Character Sheet.png"
                                 style="width:80%" onclick="currentSlide(3)" alt="Tracy Jefferson Character Sheet">
                         </div>
                         <div class="column">
-                            <img class="demo cursor" src="../Images/Portfolio-Gallery/Serenity in Thousands.jpg"
+                            <img class="demo cursor" src="Images/Portfolio-Gallery/Serenity in Thousands.jpg"
                                 style="width:80%" onclick="currentSlide(4)" alt="Serenity in Thousands">
                         </div>
                         <div class="column">
-                            <img class="demo cursor" src="../Images/Portfolio-Gallery/The Doctor's Ballad.jpeg"
+                            <img class="demo cursor" src="Images/Portfolio-Gallery/The Doctor's Ballad.jpeg"
                                 style="width:80%" onclick="currentSlide(5)" alt="The Doctor's Ballad">
                         </div>
                         <div class="column">
-                            <img class="demo cursor" src="../Images/Portfolio-Gallery/Gunman's Resolve.jpg"
+                            <img class="demo cursor" src="Images/Portfolio-Gallery/Gunman's Resolve.jpg"
                                 style="width:80%" onclick="currentSlide(6)" alt="Gunman's Resolve">
                         </div>
                     </div>
@@ -139,28 +141,31 @@
 
             <div class="section-2">
                 <div class="section-2-image">
-                    <img src="../Images/paper-adventures-cover.png" alt="Paper Adventures Cover" width="350px" />
+                    <img src="Images/paper-adventures-cover.png" alt="Paper Adventures Cover" width="350px" />
                 </div>
 
                 <div class="section-2-description">
                     <h3>Paper Adventures</h3>
                     <hr />
                     <p>
-                        A group of friends became curious of Cranberry Town's mysterious legends, leading them towards
-                        an
-                        abandoned portal to an unknown world. Follow along this tale as they are swept away into the
-                        archaic
-                        land of Paperville.
+                        Paper Adventures is a passion project of mine that has been in the works for a while now. 
+                        It is a graphic novel series that tells of a story of discovery and fantasy.
+                    </p>
+                    <p>
+                        It begins with a couple of students learning about myths and stories of an ancient and secret world. 
+                        With this information, they find and reenact the process to open the portal again. 
+                        However, they instead got dragged into an abandoned world of ruins and must uncover the 
+                        secrets of this otherworldly land.
                     </p>
                     <div class="button-container">
-                        <a class="button" href="comic-page.html">Read Now!</a>
+                        <a class="button" href="comic-page.html#paper-adventures">More Info</a>
                     </div>
                 </div>
             </div>
 
             <div class="section-2">
                 <div class="section-2--image">
-                    <img src="../Images/flourishing-twilight-cover.png" alt="Flourishing Twilight Cover" width="350px" />
+                    <img src="Images/flourishing-twilight-cover.png" alt="Flourishing Twilight Cover" width="350px" />
                 </div>
 
                 <div class="section-2-description">
@@ -173,7 +178,7 @@
                         Zone as they learn about the inhabitants and the environment!
                     </p>
                     <div class="button-container">
-                        <a class="button" href="comic-page.html">Read Now!</a>
+                        <a class="button" href="comic-page.html#flourishing-twilight">More Info</a>
                     </div>
                 </div>
             </div>

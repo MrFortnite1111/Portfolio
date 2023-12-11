@@ -33,9 +33,18 @@ h1 {
     z-index: 1;
 }
 
-.header a.logo {
+#logo {
     float: left;
-    padding: 10px;
+    padding: 0%;
+    margin: 0%;
+    height: 55px;
+    width: 30%;
+}
+
+#logo img {
+    width: 120px;
+    float: left;
+    padding: 5px 10px;
 }
 
 /* nav styles */
@@ -270,10 +279,6 @@ footer {
 
     p {
         padding: .5em;
-    }
-
-    .header img {
-        width: 20%;
     }
 
 }

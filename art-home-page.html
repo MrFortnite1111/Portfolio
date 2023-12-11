@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery | Aaron Tan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        @import url(CSS/style-art.css);
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="header">
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="Images/Logo.png" alt="logo" />
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <div class="hamburger-menu">
+                            <input id="menu__toggle" type="checkbox" />
+                            <label class="menu__btn" for="menu__toggle">
+                                <span></span>
+                            </label>
+
+                            <ul class="menu__box">
+                                <li><a class="menu__item" href="index.html">Home</a></li>
+                                <li><a class="menu__item" href="blog-page.html">Blog</a></li>
+                                <li><a class="menu__item active" href="#">Art</a></li>
+                                <li><a class="menu__item" href="comic-page.html">Comics</a></li>
+                                <li><a class="menu__item" href="about-me.html">About</a></li>
+                                <li><a class="menu__item" href="contact-page.html">Contact</a></li>
+                                <li><a class="menu__item" href="resume-page.html">Resume</a></li>
+                            </ul>
+
+
+                        </div>
+
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="blog-page.html">Blog</a></li>
+                        <li><a href="#" class="active">Art</a></li>
+                        <li><a href="comic-page.html">Comics</a></li>
+                        <li><a href="about-me.html">About</a></li>
+                        <li><a href="contact-page.html">Contact</a></li>
+                        <li><a href="resume-page.html">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="banner">
+                <h1><strong>ART GALLERY</strong></h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="section-1">
+                <h2>MY RECENT ARTWORKS!</h2>
+                <!-- Container for the image gallery -->
+                <div class="container">
+
+                    <!-- Full-width images with number text -->
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="Images/Portfolio-Gallery/Puqween-1.png" style="width: 70%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="Images/Portfolio-Gallery/Puqween-2.png" style="width: 70%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="Images/Portfolio-Gallery/Puqween-3.png" style="width: 70%">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Image text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail images -->
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="Images/Portfolio-Gallery/Puqween-1.png" style="width: 80%"
+                                onclick="currentSlide(1)" alt="Puqween 1 (Puqtuq)">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="Images/Portfolio-Gallery/Puqween-2.png" style="width: 80%"
+                                onclick="currentSlide(2)" alt="Puqween 2 (Puqtuq)">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="Images/Portfolio-Gallery/Puqween-3.png"
+                                style="width:80%" onclick="currentSlide(3)" alt="Puqween 3 (Puqtuq)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-2-header">
+                <h2>ART CATALOGUE</h2>
+            </div>
+
+            <div class="section-2">
+                <div class="art-link 1"><a href="Galleries/gallery-2023.html"><h3>2023</h3></a></div>
+                <div class="art-link 2"><a href="Galleries/gallery-2022.html"><h3>2022</h3></a></div>
+            </div>
+
+            <div class="section-2-header">
+                <h2>GRAPHIC DESIGN PORTFOLIO</h2>
+            </div>
+
+            <div class="section-2">
+                <div class="art-link gdes"><a href="Galleries/gallery-gdes.html"><h3>PROJECTS</h3></a></div>
+            </div>
+
+        </main>
+
+        <footer>
+            <ul class="social-nav">
+                <li>
+                    <a href="https://www.instagram.com/starro_art_/">
+                        <svg width="30px" height="30px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.7 56.7"
+                            style="enable-background:new 0 0 56.7 56.7;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0 {
+                                    fill: #E9B820;
+                                }
+                            </style>
+                            <g>
+                                <path class="st0" d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+		c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z" />
+                                <circle class="st0" cx="41.5" cy="16.4" r="2.9" />
+                                <path class="st0" d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7
+		c2.7,2.6,6.3,3.9,10.4,3.9h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9
+		c0,3.1-1.1,5.6-2.9,7.3s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3
+		c1.7-1.7,4.3-2.6,7.3-2.6h20.6c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z" />
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/starro_art_">
+                        <svg width="30px" height="30px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.7 56.7"
+                            style="enable-background:new 0 0 56.7 56.7;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0 {
+                                    fill: #E9B820;
+                                }
+                            </style>
+                            <path class="st0" d="M52.8,15.1c-1.8,0.8-3.8,1.3-5.8,1.6c2.1-1.2,3.7-3.2,4.4-5.6c-2,1.2-4.1,2-6.4,2.5c-1.8-2-4.5-3.2-7.4-3.2
+	c-5.6,0-10.1,4.5-10.1,10.1c0,0.8,0.1,1.6,0.3,2.3C19.4,22.3,12,18.3,7,12.2c-0.9,1.5-1.4,3.2-1.4,5.1c0,3.5,1.8,6.6,4.5,8.4
+	c-1.7-0.1-3.2-0.5-4.6-1.3c0,0,0,0.1,0,0.1c0,4.9,3.5,9,8.1,9.9c-0.8,0.2-1.7,0.4-2.7,0.4c-0.7,0-1.3-0.1-1.9-0.2c1.3,4,5,6.9,9.4,7
+	C15.1,44.3,10.7,46,6,46c-0.8,0-1.6,0-2.4-0.1c4.5,2.9,9.8,4.5,15.5,4.5c18.6,0,28.8-15.4,28.8-28.8c0-0.4,0-0.9,0-1.3
+	C49.8,18.9,51.5,17.1,52.8,15.1z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@nerdneckdoez209">
+                        <svg width="30px" height="30px" version="1.1" id="Layer_1" xmlns:serif="http://www.serif.com/"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0 {
+                                    fill: #E9B820;
+                                }
+                            </style>
+                            <path class="st0" d="M49,13c-0.6-2.2-2.3-3.8-4.4-4.4c-3.9-1-19.5-1-19.5-1s-15.6,0-19.5,1C3.3,9.1,1.6,10.8,1,13c-1,3.9-1,12-1,12
+	s0,8.1,1,12c0.6,2.2,2.3,3.8,4.4,4.4c3.9,1,19.5,1,19.5,1s15.6,0,19.5-1c2.2-0.6,3.8-2.3,4.4-4.4c1-3.9,1-12,1-12S50,16.9,49,13z
+	 M20,32.5v-15L33,25C33,25,20,32.5,20,32.5z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex - 1].style.display = "flex";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+
+        }
+    </script>
+</body>
+
+</html>
