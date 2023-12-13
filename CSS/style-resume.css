@@ -16,7 +16,7 @@ h1 {
 .banner {
     height: 400px;
     width: auto;
-    background-image: url(../Images/Banner-Images/void.png);
+    background-image: url(../Images/Banner-Images/void.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -56,7 +56,6 @@ nav {
     width: 100%;
     height: auto;
     font-family: 'Montserrat', sans-serif;
-    position: fixed;
     float: right;
 }
 
@@ -258,7 +257,7 @@ a.button:hover {
 
 footer {
     background-color: #483A7C;
-    height: 60px;
+    height: auto;
 }
 
 .social-nav {
@@ -273,6 +272,11 @@ footer {
 
 .social-nav li {
     padding: 5px 10px 0px 10px;
+}
+
+footer .copyright {
+    font-size: small;
+    color: white;
 }
 
 /* mobile styles */
@@ -371,10 +375,10 @@ footer {
 
 @media screen and (min-width: 1000px) {
 
-.section-2 {
-    padding: 6% 15%;
-    height: 850px;
-}
+    .section-2 {
+        padding: 6% 15%;
+        height: 850px;
+    }
 
 }
 
@@ -382,7 +386,7 @@ footer {
 
     .section-2 {
         padding: 6% 20%;
-       height: 900px;
+        height: 900px;
     }
 
 }
@@ -394,4 +398,3 @@ footer {
         height: 950px;
     }
 }
-

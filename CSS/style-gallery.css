@@ -208,7 +208,7 @@ h1 {
 .banner {
   height: 400px;
   width: auto;
-  background-image: url(../Images/Banner-Images/the-canvas.png);
+  background-image: url(../Images/Banner-Images/the-canvas.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -221,6 +221,7 @@ h1 {
   overflow: hidden;
   background-color: #14111D;
   position: fixed;
+  display: flex;
   width: 100%;
   z-index: 5;
 }
@@ -249,7 +250,6 @@ nav {
   width: 100%;
   height: auto;
   font-family: 'Montserrat', sans-serif;
-  position: fixed;
   float: right;
 }
 
@@ -439,7 +439,7 @@ img {
 
 footer {
   background-color: #483A7C;
-  height: 60px;
+  height: auto;
 }
 
 .social-nav {
@@ -454,6 +454,11 @@ footer {
 
 .social-nav li {
   padding: 5px 10px 0px 10px;
+}
+
+footer .copyright {
+  font-size: small;
+  color: white;
 }
 
 /* mobile styles */
@@ -593,7 +598,7 @@ footer {
   }
 
   .m-p-g__fullscreen-img {
-    width: 65%;
+    width: 60%;
   }
 
 
@@ -607,7 +612,7 @@ footer {
   }
 
   .m-p-g__fullscreen-img {
-    width: 60%;
+    width: 50%;
   }
 
 }
@@ -619,7 +624,7 @@ footer {
   }
 
   .m-p-g__fullscreen-img {
-    width: 50%;
+    width: 40%;
   }
 
 }
@@ -631,7 +636,7 @@ footer {
   }
 
   .m-p-g__fullscreen-img {
-    width: 40%;
+    width: 30%;
   }
 
 }

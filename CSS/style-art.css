@@ -16,7 +16,7 @@ h1 {
 .banner {
     height: 400px;
     width: auto;
-    background-image: url(../Images/Banner-Images/queens-gambit.png);
+    background-image: url(../Images/Banner-Images/queens-gambit.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -29,6 +29,7 @@ h1 {
     overflow: hidden;
     background-color: #14111D;
     position: fixed;
+    display: flex;
     width: 100%;
     z-index: 1;
 }
@@ -42,7 +43,7 @@ h1 {
 }
 
 #logo img {
-    width: 120px;
+    width: 140px;
     float: left;
     padding: 5px 10px;
 }
@@ -52,7 +53,6 @@ nav {
     width: 100%;
     height: auto;
     font-family: 'Montserrat', sans-serif;
-    position: fixed;
     float: right;
 }
 
@@ -326,14 +326,12 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-.art-link a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
-.art-link:hover, .art-link a:hover {
+.art-link:hover {
     background-color: #6d5caa;
     color: black;
     transition: .5s;
@@ -344,7 +342,7 @@ img {
 
 footer {
     background-color: #483A7C;
-    height: 60px;
+    height: auto;
 }
 
 .social-nav {
@@ -359,6 +357,11 @@ footer {
 
 .social-nav li {
     padding: 5px 10px 0px 10px;
+}
+
+footer .copyright {
+    font-size: small;
+    color: white;
 }
 
 /* mobile styles */
@@ -381,7 +384,7 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    
+
     .art-link {
         padding: 25% 30%;
     }
@@ -429,7 +432,7 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    
+
     .art-link {
         padding: 25% 7%;
     }
@@ -476,7 +479,7 @@ footer {
     .section-2 {
         padding: 60px 90px;
     }
-    
+
     .art-link {
         padding: 25% 10%;
     }

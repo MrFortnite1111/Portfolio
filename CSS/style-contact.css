@@ -15,7 +15,7 @@ h1 {
 .banner {
     height: 400px;
     width: auto;
-    background-image: url(../Images/Banner-Images/Marviless-Journey.png);
+    background-image: url(../Images/Banner-Images/Marviless-Journey.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -27,6 +27,7 @@ h1 {
 .header {
     overflow: hidden;
     background-color: #14111D;
+    display: flex;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -51,7 +52,6 @@ nav {
     width: 100%;
     height: auto;
     font-family: 'Montserrat', sans-serif;
-    position: fixed;
     float: right;
 }
 
@@ -287,7 +287,7 @@ a.button {
 
 footer {
     background-color: #483A7C;
-    height: 60px;
+    height: auto;
 }
 
 .social-nav {
@@ -302,6 +302,11 @@ footer {
 
 .social-nav li {
     padding: 5px 10px 0px 10px;
+}
+
+footer .copyright {
+    font-size: small;
+    color: white;
 }
 
 /* mobile styles */
@@ -352,7 +357,7 @@ footer {
     h1 {
         padding: 0%;
     }
-    
+
     .section-2 {
         padding: 10px;
         display: flex;
